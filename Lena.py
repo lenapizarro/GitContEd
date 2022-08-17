@@ -1,0 +1,1 @@
+print("hello ConfigMod world :) ")
