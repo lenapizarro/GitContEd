@@ -76,7 +76,7 @@ def print_Characteristics(animal):
     if isinstance(animal, Calf):
         print('The calf is {} and {}'. format(animal.cry(), animal.play()))
     if isinstance(animal, Dog):
-        print('The dog is {} & {} a lot'. format(animal.bark(), animal.rest())) 
+        print('The dog is {} & has rested for {}'. format(animal.bark(), animal.rest())) 
 
 
  
@@ -92,6 +92,7 @@ def main():
     cowAge2 = int(cowAge)  # the int() is actually the integer constructor, because everything in python is an object
     newBabyCow = BabyCow('Lolita', 'moooo', 'running', 'British White')
     newDog = Dog(bark= 'barking', rest= '5 hours')
+    newDog = Dog(bark= 'barking', rest= '5 hours')
     print_Characteristics(newCow)
     print_Characteristics(newBull)
     print_Characteristics(cow2)
@@ -99,7 +100,7 @@ def main():
     print_Characteristics(newCalf)
     print_Characteristics(newBabyCow)
     print(newCalf)
-    print(newDog)
+    print_Characteristics(newDog)
 
 
 if __name__ == '__main__' : main()    #This will return the name of the current module if someone were to import this file
